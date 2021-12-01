@@ -1,16 +1,16 @@
 fun main() {
 
     fun part1(input: List<String>): Int {
-        return countIncreases(input.map { it.toInt() });
+        return countIncreases(input.map { it.toInt() })
     }
 
     fun part2(input: List<String>): Int {
-        return countIncreasesWithWindow(input.map { it.toInt() }, 3);
+        return countIncreasesWithWindow(input.map { it.toInt() }, 3)
     }
 
     // test if implementation meets criteria from the description, like:
     val testInput = readInput("Day01_test")
-    println(countIncreasesWithWindow(testInput.map { it.toInt() }, 1))
+    println(countIncreases(testInput.map { it.toInt() }))
 
     val input = readInput("Day01")
     println(part1(input))
@@ -18,7 +18,7 @@ fun main() {
 }
 
 fun countIncreases(input: List<Int>): Int {
-    return countIncreasesWithWindow(input, 1);
+    return countIncreasesWithWindow(input, 1)
 }
 
 fun countIncreasesWithWindow(input: List<Int>, windowSize: Int): Int {
