@@ -1,4 +1,7 @@
-import constants.EMPTY_STRING
+package com.treviang.aoc.day03
+
+import com.treviang.aoc.constants.EMPTY_STRING
+import readInput
 
 fun main() {
 
