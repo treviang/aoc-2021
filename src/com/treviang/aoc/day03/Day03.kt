@@ -16,10 +16,10 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day03_test")
+    val testInput = readInput("com/treviang/aoc/day03/Day03_test")
     println(findLifeSupportRating(testInput))
 
-    val input = readInput("Day03")
+    val input = readInput("com/treviang/aoc/day03/Day03")
     println(part1(input))
     println(part2(input))
 }

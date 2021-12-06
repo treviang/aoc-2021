@@ -16,10 +16,10 @@ fun main() {
     //}
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day04_test")
+    val testInput = readInput("com/treviang/aoc/day04/Day04_test")
     println(prepareGame(testInput))
 
-    val input = readInput("Day04")
+    val input = readInput("com/treviang/aoc/day04/Day04")
     //println(part1(input))
     //println(part2(input))
 }

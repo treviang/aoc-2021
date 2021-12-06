@@ -14,10 +14,10 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day06_test")
+    val testInput = readInput("com/treviang/aoc/day06/Day06_test")
     println(findNumberOfFish(testInput, 256))
 
-    val input = readInput("Day06")
+    val input = readInput("com/treviang/aoc/day06/Day06")
     println(part1(input))
     println(part2(input))
 }
@@ -33,7 +33,7 @@ fun findNumberOfFish(input: List<String>, days: Int): BigInteger {
     for(i in 1.. days) {
         var newLanternFish = fishesPopulation[0]
         for(i in 0 until fishesPopulation.size-1) {
-            fishesPopulation[i] = fishesPopulation[(i + 1).mod(9)]
+            fishesPopulation[i] = fishesPopulation[(i + 1)]
         }
         fishesPopulation[6] += newLanternFish
         fishesPopulation[fishesPopulation.size-1] = newLanternFish
